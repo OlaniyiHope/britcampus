@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login to Portal — British Transatlantic Polytechnic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">BP</div>
+      <div class="brand-name"><b>British Poly</b><span>Transatlantic Polytechnic</span></div>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="course-details.html">Programmes</a>
+      <a href="tuition-fees.html">Tuition Fees</a>
+    </nav>
+    <div class="navbtns">
+      <a href="signup.html" class="btn btn-gold"><i class="fas fa-arrow-right"></i> Apply Now</a>
+    </div>
+  </div>
+</header>
+
+<div class="auth-shell">
+  <div class="auth-visual">
+    <div>
+      <div class="ribbon"><i class="fas fa-shield-halved"></i> Student &amp; Staff Portal</div>
+      <h2 class="serif">Welcome back to British Poly.</h2>
+      <ul class="auth-list">
+        <li><i class="fas fa-circle-check"></i> Check your application status and offer letter.</li>
+        <li><i class="fas fa-circle-check"></i> View course registration, results and fee balance.</li>
+        <li><i class="fas fa-circle-check"></i> Staff can manage credentials, students and courses.</li>
+      </ul>
+    </div>
+    <p class="auth-quote">Approved by the Federal Ministry of Education. Recognised by the National Board for Technical Education.</p>
+  </div>
+
+  <div class="auth-form-side">
+    <div class="auth-card">
+      <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to homepage</a>
+      <div class="eyebrow">Portal Login</div>
+      <h1 class="serif">Log in to your account</h1>
+      <p>Enter your credentials to access the student or staff portal.</p>
+
+      <form onsubmit="return false;">
+        <div class="field-group">
+          <label for="login-id">Email or Student ID</label>
+          <input type="text" id="login-id" placeholder="you@email.com or STU0012" required>
+        </div>
+
+        <div class="field-group">
+          <label for="login-pass">Password</label>
+          <input type="password" id="login-pass" placeholder="Enter your password" required>
+        </div>
+
+        <div class="field-check" style="justify-content:space-between;display:flex;align-items:center;">
+          <span style="display:flex;align-items:center;gap:8px;"><input type="checkbox" style="margin:0;"> Remember me</span>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block"><i class="fas fa-right-to-bracket"></i> Log In</button>
+      </form>
+
+      <div class="auth-divider">or</div>
+
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <button class="btn btn-outline-navy btn-block" type="button"><i class="fas fa-user-graduate"></i> Continue as Student</button>
+        <button class="btn btn-outline-navy btn-block" type="button"><i class="fas fa-user-tie"></i> Continue as Staff</button>
+      </div>
+
+      <div class="auth-foot" style="justify-content:center;">
+        <span>New here? <a href="signup.html">Create an application account</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Apply for Admission — British Transatlantic Polytechnic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">BP</div>
+      <div class="brand-name"><b>British Poly</b><span>Transatlantic Polytechnic</span></div>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="course-details.html">Programmes</a>
+      <a href="tuition-fees.html">Tuition Fees</a>
+    </nav>
+    <div class="navbtns">
+      <a href="login.html" class="btn btn-ghost">Login to Portal</a>
+    </div>
+  </div>
+</header>
+
+<div class="auth-shell">
+  <div class="auth-visual">
+    <div>
+      <div class="ribbon"><i class="fas fa-graduation-cap"></i> 2026/2027 Admissions</div>
+      <h2 class="serif">Take your career to a global level.</h2>
+      <ul class="auth-list">
+        <li><i class="fas fa-circle-check"></i> Application takes about 10 minutes to complete.</li>
+        <li><i class="fas fa-circle-check"></i> You'll need your O'Level result and a valid email address.</li>
+        <li><i class="fas fa-circle-check"></i> Save your progress and return to the portal any time before submitting.</li>
+        <li><i class="fas fa-circle-check"></i> Applications are reviewed by the admissions office within 5 working days.</li>
+      </ul>
+    </div>
+    <p class="auth-quote">"I'm more attracted to this polytechnic due to the opportunity to study under international influence." — Prospective Student</p>
+  </div>
+
+  <div class="auth-form-side">
+    <div class="auth-card">
+      <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to homepage</a>
+      <div class="eyebrow">Admissions</div>
+      <h1 class="serif">Create your application account</h1>
+      <p>Start your National Diploma application. You can complete the rest of the form after verifying your email.</p>
+
+      <form onsubmit="return false;">
+        <div class="field-row">
+          <div class="field-group">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" placeholder="Adaeze" required>
+          </div>
+          <div class="field-group">
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" placeholder="Okonkwo" required>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="you@email.com" required>
+        </div>
+
+        <div class="field-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" placeholder="+234 800 000 0000" required>
+        </div>
+
+        <div class="field-group">
+          <label for="programme">Programme of interest</label>
+          <select id="programme">
+            <option>Accountancy with Digital &amp; Cloud Accounting</option>
+            <option>Computer Engineering with Software Systems</option>
+            <option>Computer Science with Digital Media</option>
+            <option>Electrical/Electronic Engineering</option>
+            <option>Statistics with Data Science</option>
+            <option>Mass Communication with Online Journalism</option>
+            <option>Hotel &amp; Hospitality Management</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" placeholder="Create a password" required>
+          </div>
+          <div class="field-group">
+            <label for="cpass">Confirm password</label>
+            <input type="password" id="cpass" placeholder="Re-enter password" required>
+          </div>
+        </div>
+
+        <label class="field-check">
+          <input type="checkbox" required>
+          <span>I agree to the <a href="#">Terms of Admission</a> and confirm the information above is accurate.</span>
+        </label>
+
+        <button type="submit" class="btn btn-gold btn-block"><i class="fas fa-arrow-right"></i> Create Account &amp; Continue</button>
+      </form>
+
+      <div class="auth-foot" style="justify-content:center;">
+        <span>Already have an account? <a href="login.html">Log in</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
