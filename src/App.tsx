@@ -13,6 +13,7 @@ import CourseDetails from "./pages/Course";
 import TuitionFees from "./pages/TuitionFees";
 import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 
 
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/tuition" element={<TuitionFees />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           
   
         </Routes>
