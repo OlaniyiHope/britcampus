@@ -1,4 +1,4 @@
-import Header from "@/components/layout/Header";
+
 import Footer from "@/components/layout/Footer";
 
 import {
@@ -9,6 +9,7 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { IconType } from "react-icons";
+import Header from "@/components/layout/SiteHeader";
 
 interface SocialLink {
   platform: string;
@@ -53,46 +54,7 @@ const socialLinks: SocialLink[] = [
 export default function Home(): JSX.Element {
   return (
     <>
-      <div className="topbar">
-        <div className="wrap">
-          <div className="contacts">
-            <a href="tel:+2347073404445"><i className="fas fa-phone"></i>+234 707 340 4445</a>
-            <a href="mailto:admissions@britishpoly.edu.ng"><i className="fas fa-envelope"></i>admissions@britishpoly.edu.ng</a>
-            <a href="#"><i className="fas fa-location-dot"></i>Akure, Ondo State</a>
-          </div>
-          <div className="social">
-            {socialLinks.map((s) => {
-              const Icon = s.icon;
-              return (
-                <a key={s.platform} href="#" aria-label={s.platform}>
-                  <Icon />
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      <header className="nav">
-        <div className="wrap">
-          <a href="index.html" className="brand">
-            <div className="brand-mark">BP</div>
-            <div className="brand-name"><b>British Poly</b><span>Transatlantic Polytechnic</span></div>
-          </a>
-          <nav className="links">
-            <a href="index.html" className="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="course-details.html">Programmes</a>
-            <a href="tuition-fees.html">Tuition Fees</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <div className="navbtns">
-            <a href="login.html" className="btn btn-ghost">Login to Portal</a>
-            <a href="signup.html" className="btn btn-gold"><i className="fas fa-arrow-right"></i> Apply Now</a>
-            <button className="navtoggle" aria-label="Toggle menu"><i className="fas fa-bars"></i></button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <section className="hero">
         <div className="wrap">

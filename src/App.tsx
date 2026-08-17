@@ -8,6 +8,10 @@ import { AuthProvider } from "./context/AuthContext";
 
 
 import Home from "./pages/Home";
+import About from "./pages/AboutUsPage";
+import CourseDetails from "./pages/Course";
+import TuitionFees from "./pages/TuitionFees";
+import ContactUs from "./pages/ContactUs";
 
 
 
@@ -29,6 +33,10 @@ const App = () => (
         {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/course" element={<CourseDetails />} />
+          <Route path="/tuition" element={<TuitionFees />} />
+          <Route path="/contact" element={<ContactUs />} />
           
   
         </Routes>
