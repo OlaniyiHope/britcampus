@@ -55,7 +55,7 @@ export default function Login(): JSX.Element {
 
         <div className="auth-form-side">
           <div className="auth-card">
-            <a href="index.html" className="back-home"><i className="fas fa-arrow-left"></i> Back to homepage</a>
+            <a href="/" className="back-home"><i className="fas fa-arrow-left"></i> Back to homepage</a>
             <div className="eyebrow">Portal Login</div>
             <h1 className="serif">Log in to your account</h1>
             <p>Enter your credentials to access the student or staff portal.</p>
@@ -104,7 +104,7 @@ export default function Login(): JSX.Element {
             </div>
 
             <div className="auth-foot" style={{ justifyContent: "center" }}>
-              <span>New here? <a href="signup.html">Create an application account</a></span>
+              <span>New here? <a href="/signup">Create an application account</a></span>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function Login(): JSX.Element {
               <a href="about.html">About Us</a>
               <a href="course-details.html">Programmes</a>
               <a href="tuition-fees.html">Tuition Fees</a>
-              <a href="signup.html">Admissions</a>
+              <a href="/signup">Admissions</a>
             </div>
 
             <div className="foot-col">
@@ -154,7 +154,7 @@ export default function Login(): JSX.Element {
               <h5>Portal</h5>
               <a href="login.html">Student Login</a>
               <a href="login.html">Staff Login</a>
-              <a href="index.html#contact">Contact Support</a>
+              <a href="/">Contact Support</a>
             </div>
           </div>
 

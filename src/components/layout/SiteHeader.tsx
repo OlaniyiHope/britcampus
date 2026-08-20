@@ -6,7 +6,7 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa6";
-
+import { PORTAL_LOGIN_URL } from "@/lib/portal";
 type Social = { platform: string; href: string; Icon: React.ComponentType };
 
 const socialLinks: Social[] = [
@@ -65,7 +65,7 @@ export default function Header(): JSX.Element {
           </nav>
 
           <div className="navbtns">
-            <a href="/login" className="btn btn-ghost">Login to Portal</a>
+           <a href={PORTAL_LOGIN_URL} className="btn btn-ghost">Login to Portal</a>
             <a href="/signup" className="btn btn-gold">
               <i className="fas fa-arrow-right"></i> Apply Now
             </a>
